@@ -2,4 +2,4 @@
 <br>
 
 **Output:**
-![alt text](./grid.png)
+![alt text](./CSS_grid/grid.png)
