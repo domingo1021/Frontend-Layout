@@ -1,0 +1,50 @@
+.grid-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 0.5rem;
+    grid-auto-rows: minmax(100px,auto);
+
+}
+.grid-container > div{
+    background-color: rgb(255, 253, 234);
+    padding: 1rem;
+}
+.grid-container > div:nth-child(odd){
+    background-color: rgb(252, 238, 238);
+}
+.nested-grid-1{
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-gap: 0.5rem;
+  
+}
+.box1{
+    border: black 1px solid;
+    grid-column: 1 / span 2;
+}
+.box2{
+    border: black 1px solid;
+    grid-column: 3;
+    grid-row: 1 / span 2;
+}
+.box3{
+    border: black 1px solid;
+    grid-row: 3 ;
+    grid-column: 1 / span 3;
+}
+
+.nested-grid-2{
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-gap: 0.5rem;
+  
+}
+.nested-grid >div{
+    border:black 1px solid;
+}
+.box{
+    display: flex;
+    align-items: center;
+    padding: 3%;
+    border: black 1px solid;
+}
